@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Quiz</title>
+</head>
+
+<body>
+  <div class="main__wrapper">
+    <div class="quiz__container">
+      <div class="right">
+        <div>
+          <h1 class="right__title">Подберём вуз мечты</h1>
+          <p class="right__description">
+            Ответьте на 8 простых вопросов, и мы составим список наболее подходящих для вас вузов
+          </p>
+        </div>
+        <div class="right__img">
+          <img src="./images/img.png">
+        </div>
+      </div>
+
+      <form class="quiz__wrapper" data-step-form>
+
+        <!-- step one -->
+        <div class="quiz__content step_one" data-step>
+          <div class="quiz__header">
+            <h2 class="quiz__header-title">Для кого вы ищете учебное заведение?</h2>
+            <p class="quiz__header-step">Шаг <span>1</span>/9</p>
+          </div>
+
+          <div class="quiz__body">
+            <div class="quiz__body-grid">
+              <label>
+                <input type="radio" name="q1" value="Себе" checked>
+                <div class="quiz__question">
+                  <span>Себе</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q1" value="Супругу/супруге">
+                <div class="quiz__question">
+                  <span>Супругу/супруге</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q1" value="Родственнику">
+                <div class="quiz__question">
+                  <span>Родственнику</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q1" value="Родственнику">
+                <div class="quiz__question">
+                  <span>Коллеге</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q1" value="Ребенку">
+                <div class="quiz__question">
+                  <span>Ребенку</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q1" value="Другое">
+                <div class="quiz__question">
+                  <span>Другое</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <div class="quiz__buttons">
+              <button class="quiz__btn next" type="button" data-next>Далее <i
+                  class="ri-arrow-right-s-line"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- step two -->
+        <div class="quiz__content step_two" data-step>
+          <div class="quiz__header">
+            <h2 class="quiz__header-title">В каком городе планируете поступать?</h2>
+            <p class="quiz__header-step">Шаг <span>2</span>/9</p>
+          </div>
+
+          <div class="quiz__body">
+            <div class="quiz__body-select">
+              <div class="options__container">
+                <label>
+                  <input type="radio" name="q2" value="Санкт-Петербург" checked>
+                  <div class="option">
+                    <div class="square">
+                      <div class="checked">
+                        <img src="./images//checked.png">
+                      </div>
+                    </div>
+                    <span>Санкт-Петербург</span>
+                  </div>
+                </label>
+
+                <label>
+                  <input type="radio" name="q2" value="Москва">
+                  <div class="option">
+                    <div class="square">
+                      <div class="checked">
+                        <img src="./images//checked.png">
+                      </div>
+                    </div>
+                    <span>Москва</span>
+                  </div>
+                </label>
+
+                <label>
+                  <input type="radio" name="q2" value="Новосибирск">
+                  <div class="option">
+                    <div class="square">
+                      <div class="checked">
+                        <img src="./images//checked.png">
+                      </div>
+                    </div>
+                    <span>Новосибирск</span>
+                  </div>
+                </label>
+
+                <label>
+                  <input type="radio" name="q2" value="Нижний новгород">
+                  <div class="option">
+                    <div class="square">
+                      <div class="checked">
+                        <img src="./images//checked.png">
+                      </div>
+                    </div>
+                    <span>Нижний новгород</span>
+                  </div>
+                </label>
+
+                <label>
+                  <input type="radio" name="q2" value="Ростов-на-Дону">
+                  <div class="option">
+                    <div class="square">
+                      <div class="checked">
+                        <img src="./images//checked.png">
+                      </div>
+                    </div>
+                    <span>Ростов-на-Дону</span>
+                  </div>
+                </label>
+
+                <label>
+                  <input type="radio" name="q2" value="Екатеринбург">
+                  <div class="option">
+                    <div class="square">
+                      <div class="checked">
+                        <img src="./images//checked.png">
+                      </div>
+                    </div>
+                    <span>Екатеринбург</span>
+                  </div>
+                </label>
+
+                <label>
+                  <input type="radio" name="q2" value="Краснодар">
+                  <div class="option">
+                    <div class="square">
+                      <div class="checked">
+                        <img src="./images//checked.png">
+                      </div>
+                    </div>
+                    <span>Краснодар</span>
+                  </div>
+                </label>
+              </div>
+
+              <div class="selected__option">
+                <span>Город</span>
+                <p class="selected">Санкт-Петербург</p>
+              </div>
+            </div>
+            <div class="quiz__buttons">
+              <button class="quiz__btn prev" type="button" data-prev><i class="ri-arrow-left-s-line"></i> Назад
+              </button>
+              <button class="quiz__btn next" type="button" data-next>Далее <i
+                  class="ri-arrow-right-s-line"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- step three -->
+        <div class="quiz__content step_three" data-step>
+          <div class="quiz__header">
+            <h2 class="quiz__header-title">Какое образование уже есть?</h2>
+            <p class="quiz__header-step">Шаг <span>3</span>/9</p>
+          </div>
+
+          <div class="quiz__body">
+            <div class="quiz__body-grid">
+              <label>
+                <input type="radio" name="q3" value="9 классов" checked>
+                <div class="quiz__question">
+                  <span>9 классов</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q3" value="Колледж/техникум">
+                <div class="quiz__question">
+                  <span>Колледж/техникум</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q3" value="11 классов">
+                <div class="quiz__question">
+                  <span>11 классов</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q3" value="11 классов">
+                <div class="quiz__question">
+                  <span>11 классов</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q3" value="Училище">
+                <div class="quiz__question">
+                  <span>Училище</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q1" value="Неоконченное высшее">
+                <div class="quiz__question">
+                  <span>Неоконченное высшее</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="quiz__buttons">
+              <button class="quiz__btn prev" type="button" data-prev><i class="ri-arrow-left-s-line"></i> Назад
+              </button>
+              <button class="quiz__btn next" type="button" data-next>Далее <i
+                  class="ri-arrow-right-s-line"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- step four -->
+        <div class="quiz__content step_four" data-step>
+          <div class="quiz__header">
+            <h2 class="quiz__header-title">Куда планируете поступать?</h2>
+            <p class="quiz__header-step">Шаг <span>4</span>/9</p>
+          </div>
+
+          <div class="quiz__body">
+            <div class="quiz__body-grid">
+              <label>
+                <input type="radio" name="q4" value="Вуз" checked>
+                <div class="quiz__question">
+                  <span>Вуз</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q4" value="Колледж/техникум">
+                <div class="quiz__question">
+                  <span>Колледж/техникум</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q4" value="Училище">
+                <div class="quiz__question">
+                  <span>Училище</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <div class="quiz__buttons">
+              <button class="quiz__btn prev" type="button" data-prev><i class="ri-arrow-left-s-line"></i> Назад
+              </button>
+              <button class="quiz__btn next" type="button" data-next>Далее <i
+                  class="ri-arrow-right-s-line"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- step five -->
+        <div class="quiz__content step_five" data-step>
+          <div class="quiz__header">
+            <h2 class="quiz__header-title">Какую форму обучения предпочитаете?</h2>
+            <p class="quiz__header-step">Шаг <span>5</span>/9</p>
+          </div>
+
+          <div class="quiz__body">
+            <div class="quiz__body-grid">
+              <label>
+                <input type="radio" name="q5" value="Очную" checked>
+                <div class="quiz__question">
+                  <span>Очную</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q5" value="Заочную">
+                <div class="quiz__question">
+                  <span>Заочную</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q5" value="Дистанционную">
+                <div class="quiz__question">
+                  <span>Дистанционную</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+
+            </div>
+            <div class="quiz__buttons">
+              <button class="quiz__btn prev" type="button" data-prev><i class="ri-arrow-left-s-line"></i> Назад
+              </button>
+              <button class="quiz__btn next" type="button" data-next>Далее <i
+                  class="ri-arrow-right-s-line"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- step six -->
+        <div class="quiz__content step_six" data-step>
+          <div class="quiz__header">
+            <h2 class="quiz__header-title">Рассматриваете платное обучение?</h2>
+            <p class="quiz__header-step">Шаг <span>6</span>/9</p>
+          </div>
+
+          <div class="quiz__body">
+            <div class="quiz__body-grid">
+              <label>
+                <input type="radio" name="q6" value="Нет, только бюджет" checked>
+                <div class="quiz__question">
+                  <span>Нет, только бюджет</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q6" value="Да, планирую учиться платно">
+                <div class="quiz__question">
+                  <span>Да, планирую учиться платно</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q6" value="Возможны оба варианта">
+                <div class="quiz__question">
+                  <span>Возможны оба варианта</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+
+            </div>
+            <div class="quiz__buttons">
+              <button class="quiz__btn prev" type="button" data-prev><i class="ri-arrow-left-s-line"></i> Назад
+              </button>
+              <button class="quiz__btn next" type="button" data-next>Далее <i
+                  class="ri-arrow-right-s-line"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- step seven -->
+        <div class="quiz__content step_seven" data-step>
+          <div class="quiz__header">
+            <h2 class="quiz__header-title">Какая специальность интересует?</h2>
+            <p class="quiz__header-step">Шаг <span>7</span>/9</p>
+          </div>
+
+          <div class="quiz__body">
+            <div class="quiz__body-select">
+              <div class="options__container">
+                <label>
+                  <input type="radio" name="q7" value="Любая" checked>
+                  <div class="option">
+                    <div class="square">
+                      <div class="checked">
+                        <img src="./images//checked.png">
+                      </div>
+                    </div>
+                    <span>Любая</span>
+                  </div>
+                </label>
+
+                <label>
+                  <input type="radio" name="q7" value="Философия">
+                  <div class="option">
+                    <div class="square">
+                      <div class="checked">
+                        <img src="./images//checked.png">
+                      </div>
+                    </div>
+                    <span>Философия</span>
+                  </div>
+                </label>
+
+                <label>
+                  <input type="radio" name="q7" value="Социология">
+                  <div class="option">
+                    <div class="square">
+                      <div class="checked">
+                        <img src="./images//checked.png">
+                      </div>
+                    </div>
+                    <span>Социология</span>
+                  </div>
+                </label>
+
+                <label>
+                  <input type="radio" name="q7" value="Юриспруденция">
+                  <div class="option">
+                    <div class="square">
+                      <div class="checked">
+                        <img src="./images//checked.png">
+                      </div>
+                    </div>
+                    <span>Юриспруденция</span>
+                  </div>
+                </label>
+
+                <label>
+                  <input type="radio" name="q7" value="Менеджмент">
+                  <div class="option">
+                    <div class="square">
+                      <div class="checked">
+                        <img src="./images//checked.png">
+                      </div>
+                    </div>
+                    <span>Менеджмент</span>
+                  </div>
+                </label>
+
+                <label>
+                  <input type="radio" name="q7" value="Математика">
+                  <div class="option">
+                    <div class="square">
+                      <div class="checked">
+                        <img src="./images//checked.png">
+                      </div>
+                    </div>
+                    <span>Математика</span>
+                  </div>
+                </label>
+
+                <label>
+                  <input type="radio" name="q7" value="Информатика">
+                  <div class="option">
+                    <div class="square">
+                      <div class="checked">
+                        <img src="./images//checked.png">
+                      </div>
+                    </div>
+                    <span>Информатика</span>
+                  </div>
+                </label>
+              </div>
+
+              <div class="selected__option">
+                <span>Специальность</span>
+                <p class="selected">Любая</p>
+              </div>
+            </div>
+            <div class="quiz__buttons">
+              <button class="quiz__btn prev" type="button" data-prev>
+                <i class="ri-arrow-left-s-line"></i> Назад
+              </button>
+              <button class="quiz__btn next" type="button" data-next>Далее
+                <i class="ri-arrow-right-s-line"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- step height -->
+        <div class="quiz__content step_height" data-step>
+          <div class="quiz__header">
+            <h2 class="quiz__header-title">Как скоро планируете поступать?</h2>
+            <p class="quiz__header-step">Шаг <span>8</span>/9</p>
+          </div>
+
+          <div class="quiz__body">
+            <div class="quiz__body-grid">
+              <label>
+                <input type="radio" name="q8" value="Как можно быстрее" checked>
+                <div class="quiz__question">
+                  <span>Как можно быстрее</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q8" value="Месяц">
+                <div class="quiz__question">
+                  <span>Месяц</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q8" value="Квартал">
+                <div class="quiz__question">
+                  <span>Квартал</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q8" value="Полгода">
+                <div class="quiz__question">
+                  <span>Полгода</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+
+              <label>
+                <input type="radio" name="q8" value="Год">
+                <div class="quiz__question">
+                  <span>Год</span>
+                  <div class="round">
+                    <div class="point"></div>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="quiz__buttons">
+              <button class="quiz__btn prev" type="button" data-prev><i class="ri-arrow-left-s-line"></i> Назад
+              </button>
+              <button class="quiz__btn next" type="button" data-next>Далее <i
+                  class="ri-arrow-right-s-line"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- step nine -->
+        <div class="quiz__content step_nine" data-step>
+          <div class="quiz__header">
+            <h2 class="quiz__header-title">Ваша подборка готова! 🥳 Куда нам отправить её?</h2>
+            <p class="quiz__header-step">Шаг <span>9</span>/9</p>
+          </div>
+
+          <div class="quiz__body">
+            <div class="quiz__body-grid">
+              <input class="quiz__question" type="text" name="name" placeholder="Как вас зовут?">
+              <input class="quiz__question" type="text" name="phone number" placeholder="Номер телефона">
+              <input class="quiz__question" type="email" name="email" placeholder="E-mail">
+            </div>
+            <button class="quiz__btn next finish" type="submit" data-next>Получить подборку</button>
+            <p class="personal">Нажимая на кнопку, вы даете согласие на обработку своих <a href="#">Персональных
+                данных</a></p>
+          </div>
+        </div>
+
+        <!-- congrats -->
+        <div class="quiz__content step_ten" data-step>
+          <div class="step__finish">
+            <img src="./images/Icon.png">
+            <h2 class="quiz__header-title">Отлично, спасибо!</h2>
+            <p class="right__description">
+              Мы отправили подборку вам на почту.
+              Если подборка не приходит — проверьте спам, возможно, она попала туда.
+            </p>
+
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
