@@ -198,7 +198,7 @@ input[type="radio"]:checked ~ .quiz__question .round .point {
   line-height: 20px;
   padding: 12px 20px;
   background-color: inherit;
-  color: var(--stroke-color);
+  color: var(--black-color);
   border: 1px solid var(--stroke-color);
   border-radius: var(--radius-btn);
   cursor: pointer;
